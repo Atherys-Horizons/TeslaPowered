@@ -66,7 +66,6 @@ public class View implements Animatable<Layout>, Displayable {
     @Override
     public void open(Player player) {
         Task.builder().execute(t -> {
-            player.closeInventory();
             player.openInventory(inventory);
         }).submit(container);
     }
