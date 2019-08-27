@@ -99,6 +99,10 @@ public class View implements Animatable<Layout>, Displayable {
         slots.put(index, element);
     }
 
+    public int getCapacity() {
+        return inventory.capacity();
+    }
+
     /**
      * Processes a {@link ClickInventoryEvent} for this view. If there are
      * transactions that modify this inventory, the event is canceled and then
